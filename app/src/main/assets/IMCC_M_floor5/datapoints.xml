@@ -1,0 +1,124 @@
+<points>
+    <point id="A" x="0.12" y="0.46" clickable="true" />
+    <point id="B" x="0.5" y="0.46" clickable="false" />
+    <point id="B1" x="0.5" y="0.3" clickable="false" />
+    <point id="B2" x="0.5" y="0.29" clickable="false" />
+    <point id="B3" x="0.5" y="0.235" clickable="false" />
+    <point id="B4" x="0.5" y="0.65" clickable="false" />
+    <point id="B5" x="0.5" y="0.68" clickable="false" />
+    <point id="B6" x="0.5" y="0.72" clickable="false" />
+    <point id="B7" x="0.5" y="0.812" clickable="false" />
+    <point id="C" x="0.55" y="0.3" clickable="true" />
+    <point id="D" x="0.3" y="0.29" clickable="true" />
+    <point id="E" x="0.1" y="0.29" clickable="true" />
+    <point id="F" x="0.55" y="0.235" clickable="true" />
+    <point id="G" x="0.55" y="0.65" clickable="true" />
+    <point id="H" x="0.44" y="0.65" clickable="true" />
+    <point id="I" x="0.44" y="0.68" clickable="true" />
+    <point id="J" x="0.55" y="0.72" clickable="true" />
+    <point id="K" x="0.44" y="0.812" clickable="true" />
+
+
+</points>
+<textpoints>
+    <textpoint id="C" x="0.78" y="0.38" clickable="true"/>
+    <textpoint id="D" x="0.3" y="0.2" clickable="true"/>
+    <textpoint id="E" x="0.1" y="0.2" clickable="true"/>
+    <textpoint id="F" x="0.78" y="0.22" clickable="true"/>
+    <textpoint id="G" x="0.78" y="0.59" clickable="true"/>
+    <textpoint id="H" x="0.25" y="0.62" clickable="true"/>
+</textpoints>
+<graph>
+ <node id="A">
+        <connectsTo>B</connectsTo>
+    </node>
+
+    <node id="B">
+        <connectsTo>B1</connectsTo>
+        <connectsTo>B4</connectsTo>
+        <connectsTo>A</connectsTo>
+    </node>
+    <node id="B1">
+        <connectsTo>B2</connectsTo>
+        <connectsTo>B</connectsTo>
+        <connectsTo>C</connectsTo>
+    </node>
+    <node id="B2">
+        <connectsTo>D</connectsTo>
+        <connectsTo>B3</connectsTo>
+        <connectsTo>E</connectsTo>
+    </node>
+    <node id="B3">
+        <connectsTo>F</connectsTo>
+        <connectsTo>B2</connectsTo>
+        
+    </node>
+    <node id="B4">
+        <connectsTo>G</connectsTo>
+        <connectsTo>B</connectsTo>
+        <connectsTo>H</connectsTo>
+        <connectsTo>B5</connectsTo>
+        
+    </node>
+    <node id="B5">
+        <connectsTo>B4</connectsTo>
+        <connectsTo>B6</connectsTo>
+        <connectsTo>I</connectsTo>
+        
+    </node>
+    <node id="B6">
+        <connectsTo>B5</connectsTo>
+        <connectsTo>B7</connectsTo>
+        <connectsTo>J</connectsTo>
+        
+    </node>
+    <node id="B7">
+        <connectsTo>B6</connectsTo>
+        
+        <connectsTo>K</connectsTo>
+        
+    </node>
+    
+
+    <node id="C">
+        <connectsTo>B1</connectsTo>
+        
+    </node>
+
+    <node id="D">
+        <connectsTo>B2</connectsTo>
+        <connectsTo>E</connectsTo>
+    </node>
+
+    <node id="E">
+        <connectsTo>D</connectsTo>
+    </node>
+
+    <node id="F">
+        <connectsTo>B3</connectsTo>
+    </node>
+
+    <node id="G">
+        <connectsTo>B4</connectsTo>
+       
+    </node>
+
+    <node id="H">
+         <connectsTo>B4</connectsTo>
+    </node>
+
+    <node id="I">
+        <connectsTo>B5</connectsTo>
+    </node>
+
+    <node id="J">
+        <connectsTo>B6</connectsTo>
+    </node>
+
+    <node id="K">
+        <connectsTo>B7</connectsTo>
+        
+    </node>
+
+    
+</graph>

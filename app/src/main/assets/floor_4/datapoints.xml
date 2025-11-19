@@ -1,0 +1,81 @@
+<points>
+    <point id="A" x="0.11" y="0.46" clickable="true" />
+    <point id="B" x="0.53" y="0.45" clickable="true" />
+    <point id="C" x="0.53" y="0.3" clickable="false" />
+    <point id="D" x="0.29" y="0.3" clickable="true" />
+    <point id="E" x="0.09" y="0.3" clickable="true" />
+    <point id="F" x="0.53" y="0.24" clickable="true" />
+    <point id="G" x="0.53" y="0.55" clickable="true" />
+    <point id="H" x="0.48" y="0.58" clickable="true" />
+    <point id="I" x="0.53" y="0.69" clickable="false" />
+    <point id="J" x="0.45" y="0.69" clickable="true" />
+    <point id="K" x="0.53" y="0.73" clickable="true" />
+    <point id="L" x="0.45" y="0.82" clickable="true" />
+</points>
+
+<graph>
+ <node id="A">
+        <connectsTo>B</connectsTo>
+    </node>
+
+    <node id="B">
+        <connectsTo>C</connectsTo>
+        <connectsTo>A</connectsTo>
+        <connectsTo>G</connectsTo>
+    </node>
+
+    <node id="C">
+        <connectsTo>D</connectsTo>
+        <connectsTo>B</connectsTo>
+        <connectsTo>F</connectsTo>
+    </node>
+
+    <node id="D">
+        <connectsTo>C</connectsTo>
+        <connectsTo>E</connectsTo>
+    </node>
+
+    <node id="E">
+        <connectsTo>D</connectsTo>
+    </node>
+
+    <node id="F">
+        <connectsTo>C</connectsTo>
+    </node>
+
+    <node id="G">
+        <connectsTo>B</connectsTo>
+        <connectsTo>I</connectsTo>
+        <connectsTo>H</connectsTo>
+    </node>
+
+    <node id="H">
+        <connectsTo>G</connectsTo>
+        <connectsTo>J</connectsTo>
+        <connectsTo>K</connectsTo>
+    </node>
+
+    <node id="I">
+        <connectsTo>G</connectsTo>
+        <connectsTo>K</connectsTo>
+        <connectsTo>J</connectsTo>
+    </node>
+
+    <node id="J">
+        <connectsTo>I</connectsTo>
+        <connectsTo>K</connectsTo>
+        <connectsTo>L</connectsTo>
+    </node>
+
+    <node id="K">
+        <connectsTo>I</connectsTo>
+        <connectsTo>J</connectsTo>
+        <connectsTo>L</connectsTo>
+    </node>
+
+    <node id="L">
+        <connectsTo>K</connectsTo>
+        <connectsTo>I</connectsTo>
+        <connectsTo>J</connectsTo>
+    </node>
+</graph>
